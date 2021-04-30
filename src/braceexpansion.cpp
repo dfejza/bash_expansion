@@ -35,7 +35,7 @@ bool BraceExpansion::isValidInput(std::string& input) {
             }
             --braceCounter;
         } else if (input[i] == ',') {
-            if (i >= strSize - 1 || isAlphabetChar(input[i + 1]) == false) {
+            if (i >= strSize - 1 || isAlphabetChar(input[i + 1]) == false || braceCounter <= 0) {
                 isValid = false;
                 break;
             }

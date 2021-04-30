@@ -30,6 +30,7 @@ TEST_CASE("Valid brace expansion formatting")
         TestEntry(string("{A{B,C}"),false),
         TestEntry(string("{A,}"),false),
         TestEntry(string(""),false),
+        TestEntry(string(",{A,B}"),false),
         TestEntry(string("{A}"),true),
         TestEntry(string("{A,B}"),true),
         TestEntry(string("{A,B{C}}"),true),

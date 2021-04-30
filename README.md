@@ -1,11 +1,12 @@
 # Brace Expansion
-
-## Requires:
+## Compile
+### Requires:
 cmake, fmt, catch2
 
-## Building
+### Building
 CMake Boilerplate used: https://github.com/LesleyLai/cmake-cpp-boilerplate
 
+Uses standard CMake process
 ```
 mkdir build
 cd build
@@ -15,4 +16,4 @@ make test
 ```
 
 ## Bugs
-Does not work with polynomial distribution (eg {a,b}{b,c})
+Does not work with polynomial distribution like operations (eg {a,b}{b,c})
